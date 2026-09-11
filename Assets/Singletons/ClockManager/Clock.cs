@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Clock : MonoBehaviour
@@ -9,7 +10,7 @@ public class Clock : MonoBehaviour
 
     private int tickSpeed = 1;
     [SerializeField] private float timer;
-    
+    public event Action Tick; 
 
     private void Awake()
     {
@@ -23,12 +24,6 @@ public class Clock : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void FixedUpdate()
     {
@@ -37,14 +32,8 @@ public class Clock : MonoBehaviour
         while (timer >= tickSpeed)
         {
             timer -= tickSpeed;
-            OnTick();
+            Tick?.Invoke(); 
         }
-    }
-
-
-    private void OnTick()
-    {
-        return;
     }
 
 }

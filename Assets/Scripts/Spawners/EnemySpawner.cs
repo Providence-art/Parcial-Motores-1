@@ -5,15 +5,27 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] private int spawnTime;
     [SerializeField] private GameObject entityType;
-
-    void Start()
+    private int accumulativeTicks = 0;
+   private void OnEnable()
     {
-        
+        Clock.Instance.Tick += Ticked;
+    }
+   private void OnDisable()
+    {
+        Clock.Instance.Tick -= Ticked;
     }
 
-    // Update is called once per frame
-    void Update()
+
+
+    private void Ticked()
     {
-        
+        accumulativeTicks++;
+        if (accumulativeTicks >= spawnTime) {
+            SpawnEntity();
+        }
     }
+    private void SpawnEntity()
+    {
+        Instantiate(entityType, transform.position, Quaternion.identity);
+    }   
 }
