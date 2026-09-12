@@ -27,5 +27,6 @@ public class EnemySpawner : MonoBehaviour
     private void SpawnEntity()
     {
         Instantiate(entityType, transform.position, Quaternion.identity);
+        accumulativeTicks -= spawnTime;
     }   
 }
