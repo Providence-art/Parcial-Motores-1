@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(CharacterController))]
 public class CharacterMovement : MonoBehaviour
@@ -16,11 +17,36 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private float crouchHeight = 1f;
     [SerializeField] private float crouchSpeed = 3f;
 
+
+    [SerializeField] private InputActionReference moveAction;
+    [SerializeField] private InputActionReference lookAction;
+    [SerializeField] private InputActionReference sprintAction;
+    [SerializeField] private InputActionReference crouchAction;
+    [SerializeField] private InputActionReference jumpAction;
+
     private Vector3 moveDirection = Vector3.zero;
     private float rotationX = 0;
     private CharacterController characterController;
 
     private bool canMove = true;
+
+    private void OnEnable()
+    {
+        moveAction.action.Enable();
+        lookAction.action.Enable();
+        sprintAction.action.Enable();
+        crouchAction.action.Enable();
+        jumpAction.action.Enable();
+    }
+
+    private void OnDisable()
+    {
+        moveAction.action.Disable();
+        lookAction.action.Disable();
+        sprintAction.action.Disable();
+        crouchAction.action.Disable();
+        jumpAction.action.Disable();
+    }
 
     void Start()
     {
@@ -34,13 +60,18 @@ public class CharacterMovement : MonoBehaviour
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
 
-        bool isRunning = Input.GetKey(KeyCode.LeftShift);
-        float curSpeedX = canMove ? (isRunning ? runSpeed : walkSpeed) * Input.GetAxis("Vertical") : 0;
-        float curSpeedY = canMove ? (isRunning ? runSpeed : walkSpeed) * Input.GetAxis("Horizontal") : 0;
+        Vector2 moveInput = moveAction.action.ReadValue<Vector2>();
+        bool isRunning = sprintAction.action.IsPressed();
+        bool isCrouching = crouchAction.action.IsPressed();
+        bool isJumping = jumpAction.action.WasPressedThisFrame();
+
+        float curSpeedX = canMove ? (isRunning ? runSpeed : walkSpeed) * moveInput.y : 0;
+        float curSpeedY = canMove ? (isRunning ? runSpeed : walkSpeed) * moveInput.x : 0;
         float movementDirectionY = moveDirection.y;
+
         moveDirection = (forward * curSpeedX) + (right * curSpeedY);
 
-        if (Input.GetButton("Jump") && canMove && characterController.isGrounded)
+        if (isJumping && canMove && characterController.isGrounded)
         {
             moveDirection.y = jumpPower;
         }
@@ -54,12 +85,11 @@ public class CharacterMovement : MonoBehaviour
             moveDirection.y -= gravity * Time.deltaTime;
         }
 
-        if (Input.GetKey(KeyCode.R) && canMove)
+        if (isCrouching && canMove)
         {
             characterController.height = crouchHeight;
             walkSpeed = crouchSpeed;
             runSpeed = crouchSpeed;
-
         }
         else
         {
@@ -72,10 +102,12 @@ public class CharacterMovement : MonoBehaviour
 
         if (canMove)
         {
-            rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
+            Vector2 lookInput = lookAction.action.ReadValue<Vector2>();
+
+            rotationX += -lookInput.y * lookSpeed * 0.1f;
             rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
             playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
-            transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
+            transform.rotation *= Quaternion.Euler(0, lookInput.x * lookSpeed * 0.1f, 0);
         }
     }
 }
