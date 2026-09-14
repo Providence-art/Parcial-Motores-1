@@ -1,8 +1,17 @@
 using UnityEngine;
 
-public class Enemy1 : EnemyMovement
+public class EnemyStats : EnemyMovement
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] private int damage = 1; 
+    private void OnTriggerEnter(Collider other)
+    {
+        HilarioScript Player = other.GetComponent<HilarioScript>();
+
+        if (Player != null)
+        {
+            Player.TakeDamage(damage);
+        }
+    }
     void Start()
     {
         

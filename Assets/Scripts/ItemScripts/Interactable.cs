@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 public class Interactable : MonoBehaviour
@@ -10,14 +11,16 @@ public class Interactable : MonoBehaviour
 
         if (Keyboard.current.eKey.isPressed && Player != null && isActive == true)
         {
-            print("blink");
+            Actionate(Player); 
             isActive = false;
         } 
+
     }
     
-
-
-
+      public virtual void Actionate(HilarioScript player)
+    {
+        return;
+    }
 
 
 

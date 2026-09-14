@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    [SerializeField] private int healt;
+    
     [SerializeField] private int speed;
     [SerializeField] private Transform Player;
 
