@@ -4,7 +4,7 @@ using UnityEngine;
 public class HilarioScript : MonoBehaviour
 {
     [SerializeField] private int health = 3;
-
+    [SerializeField] private int maxHealth = 3;
 
     public void TakeDamage(int damage)
     {
@@ -16,7 +16,16 @@ public class HilarioScript : MonoBehaviour
     }   
     public void Heal(int healing)
     {
-        health += healing;
+        if (health + healing <= maxHealth)
+        {
+            health += healing;
+        }
+    }
+
+    public void IncreaseMaxHealth(int amount)
+    {
+        maxHealth += amount;
+        health += amount;
     }
 
 
