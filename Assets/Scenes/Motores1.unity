@@ -108375,6 +108375,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1085426804362975315, guid: ebae153136798ba43b6aabdbb3acfec6, type: 3}
+      propertyPath: jumpAction
+      value: 
+      objectReference: {fileID: 1888506458}
+    - target: {fileID: 1085426804362975315, guid: ebae153136798ba43b6aabdbb3acfec6, type: 3}
+      propertyPath: lookAction
+      value: 
+      objectReference: {fileID: 2082450932}
+    - target: {fileID: 1085426804362975315, guid: ebae153136798ba43b6aabdbb3acfec6, type: 3}
+      propertyPath: moveAction
+      value: 
+      objectReference: {fileID: 1392355185}
+    - target: {fileID: 1085426804362975315, guid: ebae153136798ba43b6aabdbb3acfec6, type: 3}
+      propertyPath: crouchAction
+      value: 
+      objectReference: {fileID: 1155483591}
+    - target: {fileID: 1085426804362975315, guid: ebae153136798ba43b6aabdbb3acfec6, type: 3}
+      propertyPath: sprintAction
+      value: 
+      objectReference: {fileID: 1679623134}
     - target: {fileID: 5116390142162560999, guid: ebae153136798ba43b6aabdbb3acfec6, type: 3}
       propertyPath: m_Name
       value: Hilario 1
@@ -108619,9 +108639,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae0f0204f99d13246aa5c24b48aae59b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  healt: 10
   speed: 5
   Player: {fileID: 285112450}
+  damage: 1
 --- !u!65 &763479368
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -114011,6 +114031,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &1155483591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
+  m_Name: Player/Crouch
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
+  m_Asset: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_ActionId: 27c5f898-bc57-4ee1-8800-db469aca5fe3
 --- !u!43 &1159049165
 Mesh:
   m_ObjectHideFlags: 0
@@ -115260,6 +115294,20 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
+--- !u!114 &1392355185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
+  m_Name: Player/Move
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
+  m_Asset: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_ActionId: 351f2ccd-1f9f-44bf-9bec-d62ac5c5f408
 --- !u!43 &1527561851
 Mesh:
   m_ObjectHideFlags: 0
@@ -116293,6 +116341,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &1679623134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
+  m_Name: Player/Sprint
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
+  m_Asset: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_ActionId: 641cd816-40e6-41b4-8c3d-04687c349290
 --- !u!1 &1715658229
 GameObject:
   m_ObjectHideFlags: 0
@@ -118249,6 +118311,20 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
+--- !u!114 &1888506458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
+  m_Name: Player/Jump
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
+  m_Asset: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_ActionId: f1ba0d36-48eb-4cd5-b651-1c94a6531f70
 --- !u!1 &1908929942
 GameObject:
   m_ObjectHideFlags: 0
@@ -118895,6 +118971,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2082450932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
+  m_Name: Player/Look
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
+  m_Asset: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_ActionId: 6b444451-8a00-4d00-a97e-f47457f736a8
 --- !u!1001 &1980068644545974287
 PrefabInstance:
   m_ObjectHideFlags: 0
