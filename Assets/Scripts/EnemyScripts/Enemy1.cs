@@ -12,14 +12,17 @@ public class EnemyStats : EnemyMovement
             Player.TakeDamage(damage);
         }
     }
-    void Start()
+    protected override void Start()
     {
-        
+        base.Start();
     }
 
     // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
-        
+        base.Update();
     }
+    //{
+       // base.FixedUpdate();
+    //}
 }
