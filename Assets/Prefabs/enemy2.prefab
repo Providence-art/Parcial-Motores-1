@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8654122543964471354}
   - component: {fileID: 3673487434992182524}
   - component: {fileID: 4992338157028500377}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: patamedia2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 6616636174260177564}
   - component: {fileID: 4876866361723487472}
   - component: {fileID: 4654488162456138039}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: patadelantera2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 8398366800240962758}
   - component: {fileID: 2323318878441784198}
   - component: {fileID: 8256230152520563420}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: patadelantera1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -351,7 +351,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4967918603631290744}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: patatracera2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -384,7 +384,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7878036514427903328}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cabeza
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -423,7 +423,7 @@ GameObject:
   - component: {fileID: 16235907808695516}
   - component: {fileID: 4058056260097521795}
   - component: {fileID: 5201266282213039117}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -537,7 +537,7 @@ GameObject:
   - component: {fileID: 7581639471394751011}
   - component: {fileID: 2169065841504611187}
   - component: {fileID: 5986110341376179832}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -651,7 +651,7 @@ GameObject:
   - component: {fileID: 6107163452577904401}
   - component: {fileID: 3244735072762088605}
   - component: {fileID: 2785454927132198981}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -765,7 +765,7 @@ GameObject:
   - component: {fileID: 7064896300433984443}
   - component: {fileID: 7022850047496575330}
   - component: {fileID: 7603672475687366220}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ojo1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -876,7 +876,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6524436379407797908}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: enemy2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -912,7 +912,7 @@ GameObject:
   - component: {fileID: 99854611388840813}
   - component: {fileID: 8821224363972224467}
   - component: {fileID: 7920046778641426710}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1024,7 +1024,7 @@ GameObject:
   - component: {fileID: 61008293418784263}
   - component: {fileID: 189735683340764691}
   - component: {fileID: 276510692858205969}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: patamedia1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1138,7 +1138,7 @@ GameObject:
   - component: {fileID: 943608161084727718}
   - component: {fileID: 5046263084019600399}
   - component: {fileID: 2955657620758683173}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ojo2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1250,7 +1250,7 @@ GameObject:
   - component: {fileID: 8261706338545709898}
   - component: {fileID: 2116072298227947701}
   - component: {fileID: 9211253318029449413}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1364,7 +1364,7 @@ GameObject:
   - component: {fileID: 8526590365807158684}
   - component: {fileID: 3543393948482487076}
   - component: {fileID: 7841284431567591014}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: torso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1484,7 +1484,7 @@ GameObject:
   - component: {fileID: 7399873465680746308}
   - component: {fileID: 4120688294716200810}
   - component: {fileID: 2268965679353405343}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: antena2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1598,7 +1598,7 @@ GameObject:
   - component: {fileID: 5728394658802794702}
   - component: {fileID: 8470315243912604233}
   - component: {fileID: 428676637708795553}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: antena1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1709,7 +1709,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 708246882266997194}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: patatracera1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -43,5 +43,6 @@ public class HilarioScript : MonoBehaviour
     private void Die()
     {
         Destroy(gameObject);
+        print("you're dead");
     }
 }
