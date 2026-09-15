@@ -4,7 +4,7 @@ public class EnemyMovement : MonoBehaviour
 {
     
     [SerializeField] private int speed;
-    [SerializeField] private Transform Player;
+    private Transform Player;
     private Rigidbody rb;
     private Vector3 direction;
     private float distance;
@@ -17,10 +17,12 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     protected virtual void Update()
     {
+     if (Player != null)
+     { 
       distance = Vector3.Distance(transform.position, Player.transform.position);
+    }
 
-
-      if(distance < 16)
+      if(distance < 16 && Player != null)
       {
          direction = Player.transform.position - transform.position;
 
@@ -44,6 +46,9 @@ public class EnemyMovement : MonoBehaviour
           rb.linearVelocity = new Vector3(direction.x*speed,rb.linearVelocity.y, direction.z*speed);
        }
     }
+   private void OnTriggerEnter(Collider other) {
+      Player = other.GetComponent<Transform>();
 
+   }
 
 }
