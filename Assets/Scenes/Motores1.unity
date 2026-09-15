@@ -37652,7 +37652,7 @@ MonoBehaviour:
   m_Capped: 0
   m_Radius: 2
   m_Range: {x: 0, y: 1}
-  m_FlipNormals: 0
+  m_FlipNormals: 1
   m_Shape:
     rid: 2994113412257021952
   references:
