@@ -2,12 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using Unity.Cinemachine;
 
 [RequireComponent(typeof(CharacterController))]
 public class CharacterMovement : MonoBehaviour
 {
-    [SerializeField] private GameObject playerCamera;
+    [SerializeField] private Camera playerCamera;
     [SerializeField] private float walkSpeed = 6f;
     [SerializeField] private float runSpeed = 12f;
     [SerializeField] private float jumpPower = 7f;
@@ -18,13 +17,13 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private float crouchHeight = 1f;
     [SerializeField] private float crouchSpeed = 3f;
 
-   
 
     [SerializeField] private InputActionReference moveAction;
     [SerializeField] private InputActionReference lookAction;
     [SerializeField] private InputActionReference sprintAction;
-    [SerializeField] private InputActionReference crouchAction;     
+    [SerializeField] private InputActionReference crouchAction;
     [SerializeField] private InputActionReference jumpAction;
+
     private Vector3 moveDirection = Vector3.zero;
     private float rotationX = 0;
     private CharacterController characterController;
@@ -33,14 +32,6 @@ public class CharacterMovement : MonoBehaviour
 
     private void OnEnable()
     {
-        moveAction = InputManagerScript.Instance.moveAction;
-        lookAction = InputManagerScript.Instance.lookAction;
-        sprintAction = InputManagerScript.Instance.sprintAction;
-        crouchAction = InputManagerScript.Instance.crouchAction;
-        jumpAction = InputManagerScript.Instance.jumpAction;
-
-      
-        
         moveAction.action.Enable();
         lookAction.action.Enable();
         sprintAction.action.Enable();
@@ -50,8 +41,6 @@ public class CharacterMovement : MonoBehaviour
 
     private void OnDisable()
     {
-       
-        
         moveAction.action.Disable();
         lookAction.action.Disable();
         sprintAction.action.Disable();
@@ -64,8 +53,6 @@ public class CharacterMovement : MonoBehaviour
         characterController = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-              
-
     }
 
     void Update()
@@ -117,10 +104,10 @@ public class CharacterMovement : MonoBehaviour
         {
             Vector2 lookInput = lookAction.action.ReadValue<Vector2>();
 
-            rotationX += lookInput.y * lookSpeed * 0.1f;
+            rotationX += -lookInput.y * lookSpeed * 0.1f;
             rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
             playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
-            transform.rotation *= Quaternion.Euler(0, lookInput.x * 2 * lookSpeed * 0.1f, 0);
+            transform.rotation *= Quaternion.Euler(0, lookInput.x * lookSpeed * 0.1f, 0);
         }
     }
 }
