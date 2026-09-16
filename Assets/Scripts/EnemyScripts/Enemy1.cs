@@ -22,7 +22,5 @@ public class EnemyStats : EnemyMovement
     {
         base.Update();
     }
-    //{
-       // base.FixedUpdate();
-    //}
+    
 }
