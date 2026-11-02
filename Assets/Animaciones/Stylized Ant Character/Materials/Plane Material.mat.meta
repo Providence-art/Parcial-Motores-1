@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 559daa38e33d974478e3d8bd1c6fea1d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 249944
+  packageName: Stylized Ant Character
+  packageVersion: 1.0
+  assetPath: Assets/Stylized Ant Character/Materials/Plane Material.mat
+  uploadId: 570982

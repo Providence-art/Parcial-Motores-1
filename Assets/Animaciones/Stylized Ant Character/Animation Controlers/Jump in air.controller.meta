@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: eff33357cb8d93c43baba43c4c6cc77c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 249944
+  packageName: Stylized Ant Character
+  packageVersion: 1.0
+  assetPath: Assets/Stylized Ant Character/Animation Controlers/Jump in air.controller
+  uploadId: 570982

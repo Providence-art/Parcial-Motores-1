@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: db820f7e17c08a94fabb9fa14771a797
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 249944
+  packageName: Stylized Ant Character
+  packageVersion: 1.0
+  assetPath: Assets/Stylized Ant Character/Animation Controlers/Death_V2.controller
+  uploadId: 570982
