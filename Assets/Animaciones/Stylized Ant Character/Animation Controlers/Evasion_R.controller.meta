@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0f0d3b175f88a4241b8311a55cb9c8d3
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 249944
+  packageName: Stylized Ant Character
+  packageVersion: 1.0
+  assetPath: Assets/Stylized Ant Character/Animation Controlers/Evasion_R.controller
+  uploadId: 570982

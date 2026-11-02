@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4fd6d0df4d0c61b419590f9b8a9b085a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 249944
+  packageName: Stylized Ant Character
+  packageVersion: 1.0
+  assetPath: Assets/Stylized Ant Character/Animation Controlers/Walk R.controller
+  uploadId: 570982

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7282e06ed4f7b4f4ab0f6e343fd34751
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 398542
+  packageName: Stylized Critter Collection Demo
+  packageVersion: 1.0
+  assetPath: Assets/Patchmesh/Stylized Critter Collection Demo/Animations/Caterpillar.controller
+  uploadId: 968658

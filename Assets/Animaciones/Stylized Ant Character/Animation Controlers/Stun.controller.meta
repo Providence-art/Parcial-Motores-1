@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ea9773d6a5ce89b4fa0fe17eed34135d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 249944
+  packageName: Stylized Ant Character
+  packageVersion: 1.0
+  assetPath: Assets/Stylized Ant Character/Animation Controlers/Stun.controller
+  uploadId: 570982

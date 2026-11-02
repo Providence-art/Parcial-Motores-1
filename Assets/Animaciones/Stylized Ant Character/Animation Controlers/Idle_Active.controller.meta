@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 95a63d4e4d963d940aa7a6d1227c86a6
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 249944
+  packageName: Stylized Ant Character
+  packageVersion: 1.0
+  assetPath: Assets/Stylized Ant Character/Animation Controlers/Idle_Active.controller
+  uploadId: 570982

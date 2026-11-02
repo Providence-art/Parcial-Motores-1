@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 960e10de8d806254fb4ad5ae094dc325
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 398542
+  packageName: Stylized Critter Collection Demo
+  packageVersion: 1.0
+  assetPath: Assets/Patchmesh/Stylized Critter Collection Demo/Animations/Ladybug.controller
+  uploadId: 968658
