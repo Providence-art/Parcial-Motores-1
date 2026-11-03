@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 429dc973b9790da4f9d7d536e1fa2eee
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 133820
+  packageName: WindowsAndDoorsPack01
+  packageVersion: 2.0
+  assetPath: Assets/WindowAndDoorsPack01/Mesh/Prefabs/RoundWindowWhite04.prefab
+  uploadId: 715535

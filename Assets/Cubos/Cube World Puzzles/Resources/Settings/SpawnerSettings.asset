@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dd4f740fc7c6f549aece78105526523, type: 3}
+  m_Name: SpawnerSettings
+  m_EditorClassIdentifier: 
+  GenerateType: 1
+  MaxGenerateCount: 2
+  MaxObjectGenerateAtOnce: 2
+  HeroPrefabs:
+  - {fileID: 8546235589559690851, guid: bf2a7682c65296840bdc07120f4e94e3, type: 3}
+  - {fileID: 8546235589559690851, guid: 0d3e2369128c8e1448cbb32d416af64a, type: 3}
+  - {fileID: 8546235589559690851, guid: 5ff226e6b42a6e549a4995f4ded11bfa, type: 3}
+  - {fileID: 8546235589559690851, guid: e3bf2e5c139f3bb4b84913ce4377e583, type: 3}
+  - {fileID: 8546235589559690851, guid: f13a266ab96f12042b25097444724efd, type: 3}
+  - {fileID: 8546235589559690851, guid: 95d5f05c4b7d5c3458b27bd6a4b54916, type: 3}
+  - {fileID: 8546235589559690851, guid: 7a0926622e2e236468265c4e87fbce41, type: 3}
+  - {fileID: 8546235589559690851, guid: 864d08d54d18521418bb19b8e4c90256, type: 3}
+  - {fileID: 8546235589559690851, guid: 2db6a25cc327f7345a1de1760cdcc7db, type: 3}
+  - {fileID: 8546235589559690851, guid: d4700d2b340e0cf44b7aa206b916a235, type: 3}
+  - {fileID: 8546235589559690851, guid: 63fcb3d4b88fe9a48888e10acd7f4b8a, type: 3}
+  - {fileID: 8546235589559690851, guid: 205aff6d7d986964da7b8b67f9e3822c, type: 3}
+  - {fileID: 8546235589559690851, guid: 291e51237a2a5e14493ef6ef2c20f4d7, type: 3}
+  PrefabAutoConfig: 1
+  PrefabOrderType: 0
+  coolDownTime: 1
+  useColors: 1
+  onReadyColor: {r: 0, g: 1, b: 0, a: 1}
+  onCoolDownColor: {r: 1, g: 0, b: 0, a: 1}

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eacb1929874d6da40bc324f754a2c87c, type: 3}
+  m_Name: TerrainLayout
+  m_EditorClassIdentifier: 
+  Obstacle: {fileID: 2100000, guid: 8064ec9ba759e7c4da724bee58d8476f, type: 2}
+  IntegrationObstacle: {fileID: 2100000, guid: 8064ec9ba759e7c4da724bee58d8476f, type: 2}
+  Door: {fileID: 2100000, guid: c2f80036126e14d42895f5ee72956560, type: 2}
+  UndercoverObstacle: {fileID: 2100000, guid: c967ff56cf62ba44b98f9d8115ee3e1e, type: 2}
+  SlideObstacle: {fileID: 2100000, guid: 1e302649dc99c9542a5ee955b0ffb54e, type: 2}
+  Checkpoint_Uncheck: {fileID: 2100000, guid: 447897329aa2b5b47b32b5f600a77b30, type: 2}
+  Checkpoint_Check: {fileID: 2100000, guid: dabbb746286c54a40a992bb99a694492, type: 2}
+  Portal: {fileID: 2100000, guid: 7f8518e097db1894e92a414a3e980a76, type: 2}
+  Destructible: {fileID: 2100000, guid: 5545dada72657184fb48a50b7f470f5b, type: 2}
+  PortalDestination: {fileID: 2100000, guid: 5545dada72657184fb48a50b7f470f5b, type: 2}
+  AutoWalk: {fileID: 2100000, guid: 28da8654bf70e5d4a9b190fd6ef62375, type: 2}
+  AutoWalkDestination: {fileID: 2100000, guid: 3c8b2e018b4a99a4abac8bf411ac125c, type: 2}
+  Spawner: {fileID: 2100000, guid: 05247fa1914cf0342bf274198a64a72e, type: 2}
+  SpawnerButton: {fileID: 2100000, guid: bb6ae6dc22abc7a4894a99ce0f5f36b2, type: 2}
+  DoorLever: {fileID: 2100000, guid: 743a01ee1c6b1754f9a961be471c64ee, type: 2}
+  GoalHome: {fileID: 2100000, guid: fae7307b4322b48478bed624be9416f2, type: 2}

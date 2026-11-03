@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 0322976276520bf438b349aae8630a02
+timeCreated: 1509406635
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 103789
+  packageName: Tim's Assets - Old Ceiling Fan
+  packageVersion: 1.0
+  assetPath: Assets/Tim's Assets/Probs/Ceiling Fan/Materials/Ceiling_Fan_mat.mat
+  uploadId: 731088

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e6fa144868e7d4c45aaf0c0f995b1d7b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 133820
+  packageName: WindowsAndDoorsPack01
+  packageVersion: 2.0
+  assetPath: Assets/WindowAndDoorsPack01/Mesh/Prefabs/StableDoorOakUPPER03.prefab
+  uploadId: 715535

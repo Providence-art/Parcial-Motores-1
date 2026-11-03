@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f0695df7007b3f1488701b9750f961fb
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 133820
+  packageName: WindowsAndDoorsPack01
+  packageVersion: 2.0
+  assetPath: Assets/WindowAndDoorsPack01/Mesh/Prefabs/StableDoorMahoganyUPPER01.prefab
+  uploadId: 715535

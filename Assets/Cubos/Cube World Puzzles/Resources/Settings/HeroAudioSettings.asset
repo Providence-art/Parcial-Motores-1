@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a02f41b067480ca40861ac1b751b030f, type: 3}
+  m_Name: HeroAudioSettings
+  m_EditorClassIdentifier: 
+  FootStep: {fileID: 8300000, guid: 72a8d264252602f449223f08df528d75, type: 3}
+  Falling: {fileID: 8300000, guid: 142fc7c83834b4f4794471703633ac08, type: 3}
+  Destroying: {fileID: 8300000, guid: ff51cc2d41578b24fbe74344a00771c0, type: 3}
+  Collecting: {fileID: 8300000, guid: 9a4b03d2954807e409069e9718591017, type: 3}
+  Trading: {fileID: 8300000, guid: 9a4b03d2954807e409069e9718591017, type: 3}

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 715dd9248d5dae34f98dcd010733f14b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 112000000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 133820
+  packageName: WindowsAndDoorsPack01
+  packageVersion: 2.0
+  assetPath: Assets/WindowAndDoorsPack01/Scene/WindowsAndDoorsPack01/LightingData.asset
+  uploadId: 715535

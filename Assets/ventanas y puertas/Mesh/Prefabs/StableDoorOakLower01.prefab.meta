@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b36b4e289c663db45b4fca107cca8dce
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 133820
+  packageName: WindowsAndDoorsPack01
+  packageVersion: 2.0
+  assetPath: Assets/WindowAndDoorsPack01/Mesh/Prefabs/StableDoorOakLower01.prefab
+  uploadId: 715535
