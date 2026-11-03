@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2ded448fd64c37444a900d352865273f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 249944
+  packageName: Stylized Ant Character
+  packageVersion: 1.0
+  assetPath: Assets/Stylized Ant Character/Animation Controlers/Ant_Attack.controller
+  uploadId: 570982

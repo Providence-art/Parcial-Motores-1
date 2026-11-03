@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 98a93028d8371ed4d8a4dc235093c16b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 249944
+  packageName: Stylized Ant Character
+  packageVersion: 1.0
+  assetPath: Assets/Stylized Ant Character/Animation Controlers/Jump Start.controller
+  uploadId: 570982

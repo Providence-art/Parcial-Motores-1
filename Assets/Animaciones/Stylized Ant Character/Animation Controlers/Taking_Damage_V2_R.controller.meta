@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 44a83509e3420334ba6b1d2190d4b0a6
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 249944
+  packageName: Stylized Ant Character
+  packageVersion: 1.0
+  assetPath: Assets/Stylized Ant Character/Animation Controlers/Taking_Damage_V2_R.controller
+  uploadId: 570982

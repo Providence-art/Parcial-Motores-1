@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3fe3cdc64f4b5544aa4ffc398a52ff06
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 398542
+  packageName: Stylized Critter Collection Demo
+  packageVersion: 1.0
+  assetPath: Assets/Patchmesh/Stylized Critter Collection Demo/Animations/Caterpillar_Rig_Caterpillar_Move.anim
+  uploadId: 968658
