@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 8073b5ea36d3e054c848b2461c210d40
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 312550
+  packageName: "Cube World Puzzles \u2013 Starter kit"
+  packageVersion: 2.0.0
+  assetPath: Assets/Hash Game studios/Cube World Puzzles/Materials/Hero/Default/Hero
+    material 12.mat
+  uploadId: 741984

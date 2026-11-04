@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 847a0910b036d864bb71710f485a8bd8
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4890085278179872738
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 133820
+  packageName: WindowsAndDoorsPack01
+  packageVersion: 2.0
+  assetPath: Assets/WindowAndDoorsPack01/Scene/WindowsAndDoors.lighting
+  uploadId: 715535

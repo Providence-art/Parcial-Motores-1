@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f6e75ecb6a7a75648aad46e2135598a4
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 133820
+  packageName: WindowsAndDoorsPack01
+  packageVersion: 2.0
+  assetPath: Assets/WindowAndDoorsPack01/Mesh/Prefabs/RoundWindowWoodWithBars01.prefab
+  uploadId: 715535

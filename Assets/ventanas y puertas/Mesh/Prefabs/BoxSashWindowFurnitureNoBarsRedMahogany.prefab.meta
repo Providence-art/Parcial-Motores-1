@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c7760dfa98aa38f4ab95b48239b2b553
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 133820
+  packageName: WindowsAndDoorsPack01
+  packageVersion: 2.0
+  assetPath: Assets/WindowAndDoorsPack01/Mesh/Prefabs/BoxSashWindowFurnitureNoBarsRedMahogany.prefab
+  uploadId: 715535

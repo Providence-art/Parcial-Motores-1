@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b38fc5b5bcf888948a4298641910f5f8
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 133820
+  packageName: WindowsAndDoorsPack01
+  packageVersion: 2.0
+  assetPath: Assets/WindowAndDoorsPack01/Mesh/Prefabs/6PanelDoor04.prefab
+  uploadId: 715535

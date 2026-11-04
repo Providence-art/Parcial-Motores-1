@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bae148b9763caa49b6854869d377b6c, type: 3}
+  m_Name: TerrainAudioSettings
+  m_EditorClassIdentifier: 
+  UndercoverIsDetected: {fileID: 8300000, guid: 29ecc2615666aa04a9c386a5beca607d, type: 3}
+  Slide: {fileID: 8300000, guid: eef01034791758045a859840233b89de, type: 3}
+  CheckPointIsCheck: {fileID: 8300000, guid: 679bbd4c015703d489fb8223c7b97bb7, type: 3}
+  PortalActivate: {fileID: 8300000, guid: dcfcf2c80c9133043ae7f2c05888870c, type: 3}
+  DestructibleDestoyed: {fileID: 0}
+  DestructibleWarning: {fileID: 0}
+  AutowalkMoveStart: {fileID: 0}
+  AutowalkUnloading: {fileID: 0}
+  SpawnerGenerate: {fileID: 0}
+  SpawnerReady: {fileID: 0}
+  GoalHomeEnter: {fileID: 0}
+  DoorOpening: {fileID: 0}

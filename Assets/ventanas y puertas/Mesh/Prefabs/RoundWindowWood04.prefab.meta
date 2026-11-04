@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f90a9b6f1536968488ab442705a73563
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 133820
+  packageName: WindowsAndDoorsPack01
+  packageVersion: 2.0
+  assetPath: Assets/WindowAndDoorsPack01/Mesh/Prefabs/RoundWindowWood04.prefab
+  uploadId: 715535

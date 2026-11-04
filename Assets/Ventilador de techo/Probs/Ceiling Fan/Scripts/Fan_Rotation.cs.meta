@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: d487d90dd6943fa4ebbc43c359ad6703
+timeCreated: 1509407346
+licenseType: Store
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 103789
+  packageName: Tim's Assets - Old Ceiling Fan
+  packageVersion: 1.0
+  assetPath: Assets/Tim's Assets/Probs/Ceiling Fan/Scripts/Fan_Rotation.cs
+  uploadId: 731088

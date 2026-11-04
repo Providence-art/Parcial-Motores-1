@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d47e4507ac992584dbdd8e54be85782f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 133820
+  packageName: WindowsAndDoorsPack01
+  packageVersion: 2.0
+  assetPath: Assets/WindowAndDoorsPack01/Mesh/Prefabs/6PanelDoor05White.prefab
+  uploadId: 715535

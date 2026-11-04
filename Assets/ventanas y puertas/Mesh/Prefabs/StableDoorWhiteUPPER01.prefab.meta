@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 410b8a8c18c894b42b92846060ce3f41
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 133820
+  packageName: WindowsAndDoorsPack01
+  packageVersion: 2.0
+  assetPath: Assets/WindowAndDoorsPack01/Mesh/Prefabs/StableDoorWhiteUPPER01.prefab
+  uploadId: 715535

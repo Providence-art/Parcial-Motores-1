@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6d02e53be53a55f4fb7e7710ee2909ba
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 133820
+  packageName: WindowsAndDoorsPack01
+  packageVersion: 2.0
+  assetPath: Assets/WindowAndDoorsPack01/Mesh/Prefabs/BoxSashWindowFurnitureNoBarsOAK.prefab
+  uploadId: 715535
