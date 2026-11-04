@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dd9b680694c1ad9449b6d6a10e456ed3
+guid: b0d176c6870f5ef428c2c53b8590c3b6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,6 +106,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites: []
@@ -128,11 +141,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 312550
-  packageName: "Cube World Puzzles \u2013 Starter kit"
-  packageVersion: 2.0.0
-  assetPath: Assets/Hash Game studios/Cube World Puzzles/Textures/Environment/Square
-    mask/SquarMask2_Albedo.png
-  uploadId: 741984
