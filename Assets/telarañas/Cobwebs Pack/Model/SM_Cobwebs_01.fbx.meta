@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: b34f1682f338e134ea71e5e19aef491f
+guid: 72f54ed6fd61786439b551f8d2c56d48
 ModelImporter:
-  serializedVersion: 22200
+  serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Cobwebs_M
-    second: {fileID: 2100000, guid: 0e768a84b4adf9341a6355fd6aba0ab3, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -21,8 +16,6 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -63,6 +56,9 @@ ModelImporter:
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
     optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
@@ -112,10 +108,3 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 320977
-  packageName: Props Pack - Cobwebs
-  packageVersion: 0.0.1
-  assetPath: Assets/PolyOne/Cobwebs Pack/Model/SM_Cobwebs_01.fbx
-  uploadId: 758465
