@@ -2,21 +2,29 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    
+    [SerializeField] private MusicaAdaptativa musica;
     [SerializeField] private int speed;
     private Transform Player;
     private Rigidbody rb;
     private Vector3 direction;
     private float distance;
     [SerializeField] private LayerMask obstacle;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
     protected virtual void Start()
     {
        rb = GetComponent<Rigidbody>();
        Player = null;
+
+
+       musica = FindFirstObjectByType<MusicaAdaptativa>();
+
+       if (musica != null)
+       {
+          musica.EnemigoAparecio();
+       }
     }
 
-    // Update is called once per frame
+    
     protected virtual void Update()
     {
      if (Player == null)
