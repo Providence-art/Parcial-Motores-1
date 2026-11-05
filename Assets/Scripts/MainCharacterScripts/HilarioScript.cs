@@ -5,15 +5,27 @@ public class HilarioScript : MonoBehaviour
 {
     [SerializeField] private int health = 6;
     [SerializeField] private int maxHealth = 3;
+    [SerializeField] private SfxVariado sfxDaño;
+    [SerializeField] private SfxVariado sfxMuerte;
 
     public void TakeDamage(int damage)
     {
+        if (health <= 0) return;
+
         health -= damage;
+
         if (health <= 0)
         {
             Die();
         }
-    }   
+        else
+        {
+            if (sfxDaño != null)
+            {
+                sfxDaño.Reproducir();
+            }
+        }
+    }
     public void Heal(int healing)
     {
         if (health + healing <= maxHealth)
@@ -36,12 +48,24 @@ public class HilarioScript : MonoBehaviour
         
     }
 
-
-
-
-
     private void Die()
     {
+        if (sfxMuerte != null)
+        {
+            GameObject objetoAudio = sfxMuerte.gameObject;
+
+            // Separamos el audio del personaje.
+            objetoAudio.transform.SetParent(null, true);
+
+            // Reproducimos el sonido.
+            sfxMuerte.Reproducir();
+
+            // Lo eliminamos cuando haya terminado.
+            Destroy(objetoAudio, 1.5f);
+        }
+
+        // Destruimos a Hilario.
         Destroy(gameObject);
     }
 }
+

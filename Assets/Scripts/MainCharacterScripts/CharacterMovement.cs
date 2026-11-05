@@ -30,6 +30,11 @@ public class CharacterMovement : MonoBehaviour
     private CharacterController characterController;
 
     private bool canMove = true;
+    [SerializeField] private SfxVariado sfxSalto;
+    [SerializeField] private SfxVariado sfxMovimiento;
+    [SerializeField] private float intervaloMovimiento = 3f;
+
+    private float temporizadorMovimiento = 0f;
 
     private void OnEnable()
     {
@@ -95,6 +100,11 @@ public class CharacterMovement : MonoBehaviour
         if (isJumping && canMove && characterController.isGrounded)
         {
             moveDirection.y = jumpPower;
+
+            if (sfxSalto != null)
+            {
+                sfxSalto.Reproducir();
+            }
         }
         else
         {
@@ -104,6 +114,7 @@ public class CharacterMovement : MonoBehaviour
         if (!characterController.isGrounded)
         {
             moveDirection.y -= gravity * Time.deltaTime;
+          
         }
 
         if (isCrouching && canMove)
@@ -120,6 +131,27 @@ public class CharacterMovement : MonoBehaviour
         }
 
         characterController.Move(moveDirection * Time.deltaTime);
+
+        bool estaMoviendose = moveInput.sqrMagnitude > 0.01f;
+
+        if (estaMoviendose && characterController.isGrounded && canMove)
+        {
+            temporizadorMovimiento -= Time.deltaTime;
+
+            if (temporizadorMovimiento <= 0f)
+            {
+                if (sfxMovimiento != null)
+                {
+                    sfxMovimiento.Reproducir();
+                }
+
+                temporizadorMovimiento = intervaloMovimiento;
+            }
+        }
+        else
+        {
+            temporizadorMovimiento = 0f;
+        }
 
         if (canMove)
         {
