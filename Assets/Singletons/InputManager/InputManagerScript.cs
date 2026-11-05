@@ -2,6 +2,8 @@ using Microsoft.VisualBasic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
+
+[DefaultExecutionOrder(-100)]
 public class InputManagerScript : MonoBehaviour
 {
     public InputActionReference moveAction;
