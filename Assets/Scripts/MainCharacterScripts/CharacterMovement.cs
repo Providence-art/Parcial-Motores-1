@@ -18,6 +18,8 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private float crouchHeight = 1f;
     [SerializeField] private float crouchSpeed = 3f;
 
+    [Header("Animacion")]
+    [SerializeField] private Animator animator;
 
     private InputActionReference moveAction;
     private InputActionReference lookAction;
@@ -38,17 +40,12 @@ public class CharacterMovement : MonoBehaviour
 
     private void OnEnable()
     {
+        moveAction = InputManagerScript.Instance.moveAction;
+        lookAction = InputManagerScript.Instance.lookAction;
+        sprintAction = InputManagerScript.Instance.sprintAction;
+        crouchAction = InputManagerScript.Instance.crouchAction;
+        jumpAction = InputManagerScript.Instance.jumpAction;
 
-    moveAction = InputManagerScript.Instance.moveAction;
-    lookAction = InputManagerScript.Instance.lookAction;
-    sprintAction = InputManagerScript.Instance.sprintAction;
-    crouchAction = InputManagerScript.Instance.crouchAction;
-    jumpAction = InputManagerScript.Instance.jumpAction;
-        
-        
-        
-        
-        
         moveAction.action.Enable();
         lookAction.action.Enable();
         sprintAction.action.Enable();
@@ -68,6 +65,8 @@ public class CharacterMovement : MonoBehaviour
     void Start()
     {
         characterController = GetComponent<CharacterController>();
+        if (animator == null) animator = GetComponentInChildren<Animator>();
+
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         CinemachineCamera vcam = FindFirstObjectByType<CinemachineCamera>();
@@ -77,8 +76,6 @@ public class CharacterMovement : MonoBehaviour
             vcam.Follow = playerCamera.transform;
             vcam.LookAt = playerCamera.transform;
         }
-
-
     }
 
     void Update()
@@ -105,6 +102,11 @@ public class CharacterMovement : MonoBehaviour
             {
                 sfxSalto.Reproducir();
             }
+
+            if (animator != null)
+            {
+                animator.SetTrigger("Saltar");
+            }
         }
         else
         {
@@ -114,7 +116,6 @@ public class CharacterMovement : MonoBehaviour
         if (!characterController.isGrounded)
         {
             moveDirection.y -= gravity * Time.deltaTime;
-          
         }
 
         if (isCrouching && canMove)
@@ -162,5 +163,15 @@ public class CharacterMovement : MonoBehaviour
             playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
             transform.rotation *= Quaternion.Euler(0, lookInput.x * lookSpeed * 2 * 0.1f, 0);
         }
+
+        ActualizarAnimacion();
+    }
+
+    private void ActualizarAnimacion()
+    {
+        if (animator == null) return;
+
+        float velocidadHorizontal = new Vector3(moveDirection.x, 0f, moveDirection.z).magnitude;
+        animator.SetFloat("Velocidad", velocidadHorizontal);
     }
 }
