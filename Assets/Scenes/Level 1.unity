@@ -43611,6 +43611,56 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b08093aa188cbf47bab54341f9543a7, type: 3}
+--- !u!1 &250125251
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 250125253}
+  - component: {fileID: 250125252}
+  m_Layer: 0
+  m_Name: AudioVida
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &250125252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250125251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae7a915a5318d444699b10d9be76d927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LowpassPorVida
+  mixer: {fileID: 24100000, guid: 4a0d1fe8f860b374b835d78a0b80e0d1, type: 2}
+  parametro: CutoffMusica
+  umbralVida: 0.4
+  cutoffNormal: 22000
+  cutoffMinimo: 800
+  suavizado: 4
+--- !u!4 &250125253
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250125251}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.56813, y: 21.38101, z: -379.6349}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &256741668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43981,6 +44031,93 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &280022646
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: b269fd7d847b62a4c8c62f355acca735, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -29.32048
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b269fd7d847b62a4c8c62f355acca735, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.008680496
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b269fd7d847b62a4c8c62f355acca735, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -245.75148
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b269fd7d847b62a4c8c62f355acca735, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b269fd7d847b62a4c8c62f355acca735, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b269fd7d847b62a4c8c62f355acca735, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b269fd7d847b62a4c8c62f355acca735, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b269fd7d847b62a4c8c62f355acca735, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b269fd7d847b62a4c8c62f355acca735, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b269fd7d847b62a4c8c62f355acca735, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b269fd7d847b62a4c8c62f355acca735, type: 3}
+      propertyPath: m_Name
+      value: Chibi Hamster 3D Character
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b269fd7d847b62a4c8c62f355acca735, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 280022648}
+  m_SourcePrefab: {fileID: 100100000, guid: b269fd7d847b62a4c8c62f355acca735, type: 3}
+--- !u!1 &280022647 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b269fd7d847b62a4c8c62f355acca735, type: 3}
+  m_PrefabInstance: {fileID: 280022646}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &280022648
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280022647}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: b269fd7d847b62a4c8c62f355acca735, type: 3}
+  m_Controller: {fileID: 9100000, guid: 0cb44714defc42244b44fcf39e5677b7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!43 &289242814
 Mesh:
   m_ObjectHideFlags: 0
@@ -165451,6 +165588,59 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b7a8deb43cef4e42b2cf0f8f24f8209, type: 3}
+--- !u!1 &1729828436
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1729828438}
+  - component: {fileID: 1729828437}
+  m_Layer: 0
+  m_Name: AudioDucking
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1729828437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729828436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28da0f4a398bb804b8610a624f9afacc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MusicDucker
+  mixer: {fileID: 24100000, guid: 4a0d1fe8f860b374b835d78a0b80e0d1, type: 2}
+  voces:
+  - {fileID: 0}
+  - {fileID: 0}
+  parametro: MusicaVol
+  dbReposo: 0
+  dbBajado: -12
+  dbPorSegBajada: 60
+  dbPorSegSubida: 15
+--- !u!4 &1729828438
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729828436}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.56813, y: 21.381, z: -379.63492}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1734070276
 Mesh:
   m_ObjectHideFlags: 0
@@ -171228,7 +171418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e423305974d605544a07a9247ee79f5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpawnPlatform
-  hilario: {fileID: 5116390142162560999, guid: ebae153136798ba43b6aabdbb3acfec6, type: 3}
+  hilario: {fileID: 919132149155446097, guid: b269fd7d847b62a4c8c62f355acca735, type: 3}
 --- !u!136 &1889735938
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -180317,3 +180507,6 @@ SceneRoots:
   - {fileID: 1751505902}
   - {fileID: 1309391917}
   - {fileID: 1773625703}
+  - {fileID: 1729828438}
+  - {fileID: 250125253}
+  - {fileID: 280022646}
