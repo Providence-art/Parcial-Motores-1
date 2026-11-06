@@ -82,7 +82,6 @@ public class CharacterMovement : MonoBehaviour
     {
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
-
         Vector2 moveInput = moveAction.action.ReadValue<Vector2>();
         bool isRunning = sprintAction.action.IsPressed();
         bool isCrouching = crouchAction.action.IsPressed();
