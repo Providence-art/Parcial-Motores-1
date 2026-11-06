@@ -15,9 +15,6 @@ public class EnemyMovement : MonoBehaviour
        rb = GetComponent<Rigidbody>();
        Player = null;
 
-
-       musica = FindFirstObjectByType<MusicaAdaptativa>();
-
        if (musica != null)
        {
           musica.EnemigoAparecio();
@@ -29,6 +26,8 @@ public class EnemyMovement : MonoBehaviour
     {
      if (Player == null)
      {
+      
+
        GameObject foundPlayer = GameObject.FindWithTag("Player");              
        if(foundPlayer != null)
        {
@@ -44,6 +43,11 @@ public class EnemyMovement : MonoBehaviour
 
       if(distance < 30 && Player != null)
       {
+         if(musica != null)
+      {
+         musica.pelea.TransitionTo(0.4f);
+      }
+      
          direction = Player.transform.position - transform.position;
          Vector3 rayDirection = direction.normalized;
 
@@ -55,6 +59,11 @@ public class EnemyMovement : MonoBehaviour
          }
          else
          {
+            if(musica != null)
+         {
+            musica.exploracion.TransitionTo(3.0f);
+         }
+
            direction = Vector3.zero;
          }
       }

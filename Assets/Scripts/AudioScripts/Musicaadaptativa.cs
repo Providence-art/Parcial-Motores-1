@@ -3,9 +3,9 @@ using UnityEngine.Audio;
 
 public class MusicaAdaptativa : MonoBehaviour
 {
-    [SerializeField] AudioMixerSnapshot exploracion;
-    [SerializeField] AudioMixerSnapshot pelea;
-    [SerializeField] AudioMixerSnapshot victoria;
+    public AudioMixerSnapshot exploracion;
+    public AudioMixerSnapshot pelea;
+    public AudioMixerSnapshot victoria;
     [SerializeField] float tPelea = 0.4f;
     [SerializeField] float tVictoria = 2.5f;
     [SerializeField] float tExploracion = 3f;
