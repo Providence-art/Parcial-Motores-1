@@ -12,6 +12,7 @@ public class InputManagerScript : MonoBehaviour
     public InputActionReference crouchAction;
     public InputActionReference jumpAction;
 
+    public InputActionReference dashAction;
     public InputActionReference Reset;
 
     static private InputManagerScript instance;

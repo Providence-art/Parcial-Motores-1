@@ -769,6 +769,7 @@ GameObject:
   - component: {fileID: 1140113507}
   - component: {fileID: 1140113506}
   - component: {fileID: 1140113505}
+  - component: {fileID: 1140113509}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -870,6 +871,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1140113509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140113504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18cdc84e9641ae44ca18a3d65b8c316b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InputManagerScript
+  moveAction: {fileID: 0}
+  lookAction: {fileID: 0}
+  sprintAction: {fileID: 0}
+  crouchAction: {fileID: 0}
+  jumpAction: {fileID: 0}
+  dashAction: {fileID: 0}
+  Reset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

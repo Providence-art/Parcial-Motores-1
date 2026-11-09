@@ -75100,6 +75100,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1715658235}
   m_LocalEulerAnglesHint: {x: -32.771, y: 0.006, z: -0.011}
+--- !u!114 &492623031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
+  m_Name: Player/Dash
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
+  m_Asset: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_ActionId: 48364147-1e96-47c9-b41e-661167255bcc
 --- !u!1 &493549953
 GameObject:
   m_ObjectHideFlags: 0
@@ -206890,6 +206904,7 @@ MonoBehaviour:
   sprintAction: {fileID: 1886521512}
   crouchAction: {fileID: 1510868154}
   jumpAction: {fileID: 90234942}
+  dashAction: {fileID: 492623031}
   Reset: {fileID: 256741668}
 --- !u!4 &2123875752
 Transform:

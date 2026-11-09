@@ -26,6 +26,17 @@ public class CharacterMovement : MonoBehaviour
     private InputActionReference sprintAction;
     private InputActionReference crouchAction;
     private InputActionReference jumpAction;
+    [Header("Dash")]
+    [SerializeField] private float dashSpeed = 25f;
+    [SerializeField] private float dashDuration = 0.15f;
+    [SerializeField] private float dashCooldown = 3f;
+
+    private InputActionReference dashAction;
+    private bool isDashing = false;
+    private float dashTimer = 0f;
+    private float dashCooldownTimer = 0f;
+    private Vector3 dashDirection;
+
 
     private Vector3 moveDirection = Vector3.zero;
     private float rotationX = 0;
@@ -45,12 +56,14 @@ public class CharacterMovement : MonoBehaviour
         sprintAction = InputManagerScript.Instance.sprintAction;
         crouchAction = InputManagerScript.Instance.crouchAction;
         jumpAction = InputManagerScript.Instance.jumpAction;
+        dashAction = InputManagerScript.Instance.dashAction;
 
         moveAction.action.Enable();
         lookAction.action.Enable();
         sprintAction.action.Enable();
         crouchAction.action.Enable();
         jumpAction.action.Enable();
+        dashAction.action.Enable();
     }
 
     private void OnDisable()
@@ -60,6 +73,7 @@ public class CharacterMovement : MonoBehaviour
         sprintAction.action.Disable();
         crouchAction.action.Disable();
         jumpAction.action.Disable();
+        dashAction.action.Disable();
     }
 
     void Start()
@@ -91,6 +105,21 @@ public class CharacterMovement : MonoBehaviour
         float curSpeedY = canMove ? (isRunning ? runSpeed : walkSpeed) * moveInput.x : 0;
         float movementDirectionY = moveDirection.y;
 
+        if (dashCooldownTimer > 0f)
+        {
+            dashCooldownTimer -= Time.deltaTime;
+        }
+
+        if (dashAction.action.WasPressedThisFrame() && canMove && !isDashing && dashCooldownTimer <= 0f)
+    {
+        Vector3 inputDir = (forward * moveInput.y) + (right * moveInput.x);
+        dashDirection = inputDir.sqrMagnitude > 0.01f ? inputDir.normalized : forward;
+
+        isDashing = true;
+        dashTimer = dashDuration;
+        dashCooldownTimer = dashCooldown;
+
+    }
         moveDirection = (forward * curSpeedX) + (right * curSpeedY);
 
         if (isJumping && canMove && characterController.isGrounded)
@@ -129,6 +158,21 @@ public class CharacterMovement : MonoBehaviour
             walkSpeed = 6f;
             runSpeed = 12f;
         }
+
+        if (isDashing)
+        {
+            moveDirection.x = dashDirection.x * dashSpeed;
+            moveDirection.z = dashDirection.z * dashSpeed;
+
+            dashTimer -= Time.deltaTime;
+            if (dashTimer <= 0f)
+            {
+                isDashing = false;
+            }
+        }
+
+
+
 
         characterController.Move(moveDirection * Time.deltaTime);
 
