@@ -90,6 +90,7 @@ public class CharacterMovement : MonoBehaviour
             vcam.Follow = playerCamera.transform;
             vcam.LookAt = playerCamera.transform;
         }
+
     }
 
     void Update()
