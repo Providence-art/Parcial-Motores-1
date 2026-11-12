@@ -3,96 +3,69 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] private MusicaAdaptativa musica;
-    [SerializeField] private int speed;
-    private Transform Player;
-    private Rigidbody rb;
-    private Vector3 direction;
+    [SerializeField] private float speed = 5f;
+    protected private Transform player;
     private float distance;
     [SerializeField] private LayerMask obstacle;
-    
+
     protected virtual void Start()
     {
-       rb = GetComponent<Rigidbody>();
-       Player = null;
+        player = null;
 
-       if (musica != null)
-       {
-          musica.EnemigoAparecio();
-       }
+        if (musica != null)
+        {
+            musica.EnemigoAparecio();
+        }
     }
 
-    
     protected virtual void Update()
     {
-     if (Player == null)
-     {
-      
+        if (player == null)
+        {
+            GameObject foundPlayer = GameObject.FindWithTag("Player");
+            if (foundPlayer != null)
+            {
+                player = foundPlayer.transform;
+            }
+        }
 
-       GameObject foundPlayer = GameObject.FindWithTag("Player");              
-       if(foundPlayer != null)
-       {
-            Player = foundPlayer.transform;
-            Debug.Log("encontrado");
-       }
-     }
+        if (player != null)
+        {
+            distance = Vector3.Distance(transform.position, player.position);
 
-     if (Player != null)
-     { 
-       distance = Vector3.Distance(transform.position, Player.position);
-     
+            if (distance < 30)
+            {
+                if (musica != null)
+                {
+                    musica.pelea.TransitionTo(0.4f);
+                }
 
-      if(distance < 30 && Player != null)
-      {
-         if(musica != null)
-      {
-         musica.pelea.TransitionTo(0.4f);
-      }
-      
-         direction = Player.transform.position - transform.position;
-         Vector3 rayDirection = direction.normalized;
+                Vector3 direction = player.position - transform.position;
+                direction.y = 0;
+                Vector3 rayDirection = direction.normalized;
 
-         if(Physics.Raycast(transform.position, rayDirection, distance, obstacle) == false)
-         {
-           float angle = Mathf.Atan2(direction.x, direction.z)*Mathf.Rad2Deg + 90;
-           transform.rotation = Quaternion.Euler(0,angle,0);
-           direction.Normalize();
-         }
-         else
-         {
-            if(musica != null)
-         {
-            musica.exploracion.TransitionTo(3.0f);
-         }
+                if (Physics.Raycast(transform.position, rayDirection, distance, obstacle) == false)
+                {
+                    float angle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + 180f;
+                    transform.rotation = Quaternion.Euler(0, angle, 0);
 
-           direction = Vector3.zero;
-         }
-      }
-
-      else
-      {
-         direction = Vector3.zero;
-      }
-
-     }
-     else
-      {
-         direction = Vector3.zero;
-      }
+                    transform.position += direction.normalized * speed * Time.deltaTime;
+                }
+                else
+                {
+                    if (musica != null)
+                    {
+                        musica.exploracion.TransitionTo(3.0f);
+                    }
+                }
+            }
+            else
+            {
+                if (musica != null)
+                {
+                    musica.exploracion.TransitionTo(3.0f);
+                }
+            }
+        }
     }
-
-    protected virtual void FixedUpdate()
-    {
-       if(rb != null && direction != Vector3.zero)
-       {
-          rb.linearVelocity = new Vector3(direction.x*speed,rb.linearVelocity.y, direction.z*speed);
-       }
-    }
-   //private void OnTriggerEnter(Collider other)
-    //{
-      //if(other.CompareTag ("PLayer"))
-      //{
-       // Player = other.GetComponent<Transform>();
-      ///}
-    //}
-
 }
