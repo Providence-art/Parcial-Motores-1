@@ -3206,6 +3206,10 @@ PrefabInstance:
       propertyPath: MaxDistance
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1953218271878007698, guid: ee55fcc24b3041b40a355fde52caa686, type: 3}
+      propertyPath: MinDistance
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2791197690108933708, guid: ee55fcc24b3041b40a355fde52caa686, type: 3}
       propertyPath: m_Name
       value: efcto 1
@@ -91885,6 +91889,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8854237465737303735, guid: d57767884782b8d438d9c06be8c7d20f, type: 3}
+      propertyPath: Mute
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854237465737303735, guid: d57767884782b8d438d9c06be8c7d20f, type: 3}
       propertyPath: m_Resource
       value: 
       objectReference: {fileID: 8300000, guid: 3a450ca1c3c70ff43bb0f188c8209ac6, type: 3}
@@ -129309,9 +129317,17 @@ PrefabInstance:
       value: efecto 3
       objectReference: {fileID: 0}
     - target: {fileID: 4052860256238138560, guid: 80dd9beb33881294ba2dd901a2d571da, type: 3}
+      propertyPath: Mute
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4052860256238138560, guid: 80dd9beb33881294ba2dd901a2d571da, type: 3}
       propertyPath: m_Resource
       value: 
       objectReference: {fileID: 8300000, guid: 869c07e4f2d46c942b42287e19f104b4, type: 3}
+    - target: {fileID: 4052860256238138560, guid: 80dd9beb33881294ba2dd901a2d571da, type: 3}
+      propertyPath: MinDistance
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6895514510788545472, guid: 80dd9beb33881294ba2dd901a2d571da, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.02
@@ -172970,7 +172986,11 @@ PrefabInstance:
     - target: {fileID: 3821399504591307310, guid: 5b44ba1a9710a544d973d8e62d85e2f3, type: 3}
       propertyPath: m_Resource
       value: 
-      objectReference: {fileID: 8300000, guid: b9e6f7e54e5384245a1af103973cd55b, type: 3}
+      objectReference: {fileID: 8300000, guid: 428e85311f046db43a9b823b2f70f3d3, type: 3}
+    - target: {fileID: 3821399504591307310, guid: 5b44ba1a9710a544d973d8e62d85e2f3, type: 3}
+      propertyPath: MinDistance
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3895333326951485869, guid: 5b44ba1a9710a544d973d8e62d85e2f3, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.0013066651
