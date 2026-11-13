@@ -10,6 +10,8 @@ public class VidaHilario : MonoBehaviour
     [SerializeField] UnityEvent alRecibirDano;
     [SerializeField] UnityEvent alMorir;
 
+    public static event System.Action<VidaHilario> AlMorirCualquiera;
+
     float vidaActual;
     float tiempoUltimoDano = -999f;
     bool muerto;
@@ -20,6 +22,11 @@ public class VidaHilario : MonoBehaviour
     {
         vidaActual = vidaMaxima;
         NotificarAudio();
+    }
+
+    public void AsignarFiltro(LowpassPorVida filtro)
+    {
+        filtroVida = filtro;
     }
 
     public void RecibirDano(float cantidad)
@@ -34,8 +41,10 @@ public class VidaHilario : MonoBehaviour
         if (vidaActual <= 0f)
         {
             muerto = true;
+            AlMorirCualquiera?.Invoke(this);
             alMorir.Invoke();
         }
+
     }
 
     void Update()
