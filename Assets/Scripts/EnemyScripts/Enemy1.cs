@@ -35,6 +35,10 @@ public class EnemyStats : EnemyMovement
         if (hilarioScript != null)
         {
             hilarioScript.TakeDamage(damage);
+            if (hilarioScript.JustParried() == true)
+            {
+                Die();
+            } 
             DispararAtaque();
             return;
         }
@@ -54,5 +58,10 @@ public class EnemyStats : EnemyMovement
         {
             animator.SetTrigger("Atacar");
         }
+    }
+
+    public void Die()
+    {
+        Destroy(gameObject);
     }
 }

@@ -18,7 +18,6 @@ public class HilarioScript : MonoBehaviour
     {
         if (movement.IsDashing == true)
         {
-            print("Parried");
             return;
         }
         if (health <= 0) return;
@@ -35,6 +34,18 @@ public class HilarioScript : MonoBehaviour
             {
                 sfxDaño.Reproducir();
             }
+        }
+    }
+
+    public bool JustParried()
+    {
+        if (movement.IsDashing == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
     public void Heal(int healing)
