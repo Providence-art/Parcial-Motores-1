@@ -7,9 +7,20 @@ public class HilarioScript : MonoBehaviour
     [SerializeField] private int maxHealth = 3;
     [SerializeField] private SfxVariado sfxDaño;
     [SerializeField] private SfxVariado sfxMuerte;
+    private CharacterMovement movement;
 
+
+    void Awake()
+    {
+        movement = GetComponent<CharacterMovement>();
+    }
     public void TakeDamage(int damage)
     {
+        if (movement.IsDashing == true)
+        {
+            print("Parried");
+            return;
+        }
         if (health <= 0) return;
 
         health -= damage;

@@ -4,7 +4,7 @@ public class EnemyStats : EnemyMovement
 {
     [SerializeField] private int damage = 1;
 
-    [Header("Animación")]
+    [Header("Animaciï¿½n")]
     [SerializeField] private Animator animator;
 
     protected override void Start()

@@ -27,12 +27,13 @@ public class CharacterMovement : MonoBehaviour
     private InputActionReference crouchAction;
     private InputActionReference jumpAction;
     [Header("Dash")]
-    [SerializeField] private float dashSpeed = 25f;
+    [SerializeField] private float dashSpeed = 250f;
     [SerializeField] private float dashDuration = 0.15f;
     [SerializeField] private float dashCooldown = 3f;
 
     private InputActionReference dashAction;
     private bool isDashing = false;
+    public bool IsDashing => isDashing;
     private float dashTimer = 0f;
     private float dashCooldownTimer = 0f;
     private Vector3 dashDirection;
@@ -162,8 +163,8 @@ public class CharacterMovement : MonoBehaviour
 
         if (isDashing)
         {
-            moveDirection.x = dashDirection.x * dashSpeed;
-            moveDirection.z = dashDirection.z * dashSpeed;
+            moveDirection.x = dashDirection.x * dashSpeed * 5;
+            moveDirection.z = dashDirection.z * dashSpeed * 5;
 
             dashTimer -= Time.deltaTime;
             if (dashTimer <= 0f)
