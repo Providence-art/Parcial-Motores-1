@@ -76,17 +76,15 @@ public class HilarioScript : MonoBehaviour
         {
             GameObject objetoAudio = sfxMuerte.gameObject;
 
-            // Separamos el audio del personaje.
             objetoAudio.transform.SetParent(null, true);
 
-            // Reproducimos el sonido.
+            
             sfxMuerte.Reproducir();
 
-            // Lo eliminamos cuando haya terminado.
             Destroy(objetoAudio, 1.5f);
         }
 
-        // Destruimos a Hilario.
+
         Destroy(gameObject);
     }
 }

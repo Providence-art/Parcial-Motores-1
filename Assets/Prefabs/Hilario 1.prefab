@@ -146,7 +146,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c2e34600aa098aa448b9e09ea78ab774, type: 3}
   - {fileID: 8300000, guid: c845f6ad92ca34c4dadf4ba4b1080b1c, type: 3}
   rangoPitch: {x: 0.9, y: 1.1}
-  rangoVolumen: {x: 2, y: 1.5}
+  rangoVolumen: {x: 4, y: 4}
 --- !u!1 &4952381305967368375
 GameObject:
   m_ObjectHideFlags: 0
