@@ -309,6 +309,7 @@ GameObject:
   - component: {fileID: 1085426804362975315}
   - component: {fileID: 5165904137449724077}
   - component: {fileID: 5816214858111484056}
+  - component: {fileID: -3675199684382344470}
   m_Layer: 0
   m_Name: Hilario 1
   m_TagString: Player
@@ -486,6 +487,33 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2432090755550338912, guid: 764408555e34f0648a7d02b816b4a0ae, type: 3}
+--- !u!54 &-3675199684382344470
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5116390142162560999}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &5210372858319464515
 GameObject:
   m_ObjectHideFlags: 0

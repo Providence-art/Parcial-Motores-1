@@ -1,86 +1,80 @@
 using UnityEngine;
-using System.Collections.Generic;
+using UnityEngine.Splines;
+using Unity.Mathematics;
 
 public class spiderBehabiour : MonoBehaviour
 {
-   [SerializeField] private float speed;
-   
-   private Transform moveObjective;
-   private int index = 0;
-   private Rigidbody rb;
-   private int damage = 150;
+   [SerializeField] private Animator animator;
 
-   private List<Transform> movePoints = new List<Transform>();
+   [SerializeField] private float speed;
+   [SerializeField] private SplineContainer spline;
+   
+   
+   private Rigidbody rb;
+   private float walkedDistance;
+   private float totalLength;
+   [SerializeField] private float groundOffset;
+  
 
 
     void Start()
     {
+      if (animator == null) animator = GetComponentInChildren<Animator>();
+
       rb = GetComponent<Rigidbody>();
+      spline = GameObject.Find("scapeVent").GetComponent<SplineContainer>();
 
-      for(int i=1; i<=9; i++)
-      {
-        GameObject point = GameObject.Find("point"+i);
-        if(point != null)
-        {
-          movePoints.Add(point.transform);
-        }
-        
-      }
+       if(spline != null)
+       {
+         totalLength = spline.CalculateLength();
+       }
+    }
 
-      if(movePoints.Count > 0)
-      {
-        moveObjective = movePoints[0];
-      }
+    void Update()
+    {
+      ActualizarAnimaciones();
     }
 
 
     void FixedUpdate()
     {
-      if(moveObjective == null){return;}
+       if(spline == null || totalLength <= 0f){return;}
 
-      Vector3 targetPosition = new Vector3 (moveObjective.position.x, transform.position.y, moveObjective.position.z);
-      Vector3 direction = (targetPosition - transform.position).normalized;
+       walkedDistance += speed * Time.fixedDeltaTime;
+       float rotation = Mathf.Clamp01(walkedDistance / totalLength);
 
-      rb.linearVelocity = new Vector3(direction.x * speed, rb.linearVelocity.y, direction.z * speed);
+       spline.Evaluate(rotation, out float3 position, out float3 tangent, out float3 above);
 
-      if(direction != Vector3.zero)
-      {
-        float angle = Mathf.Atan2(direction.x, direction.z)*Mathf.Rad2Deg + 180;
-        rb.MoveRotation(Quaternion.Euler(0,angle,0));
-      }
+       Vector3 down = ((Vector3)above).sqrMagnitude > 0.01f ? -((Vector3)above).normalized : Vector3.down;
+       Vector3 groundPosition = (Vector3)position + (down * groundOffset);
 
-      
+       rb.MovePosition(groundPosition);
+       Vector3 direction = new Vector3(tangent.x, 0f, tangent.z);
+
+       if(direction.sqrMagnitude > 0.01f)
+       {
+         float angle = Mathf.Atan2(direction.x, direction.z)*Mathf.Rad2Deg + 180f;
+         rb.MoveRotation(Quaternion.Euler(0f,angle,0f));
+       }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-      if(other.CompareTag("nextPoint") && other.transform == moveObjective)
-      {
-        index++;
 
-        if(index < movePoints.Count)
-        {
-            moveObjective = movePoints[index];
-        }
-        else
-        {
-            moveObjective = null;
-            rb.linearVelocity = Vector3.zero;
-        }
-      }
-     }
-
-     private void OnCollisionEnter(Collision collision)
+     private void OnTriggerEnter(Collider other)
      {
-       if(collision.gameObject.CompareTag("Player"))
+       if(other.gameObject.CompareTag("Player"))
        {
-         HilarioScript hilarioScript = collision.gameObject.GetComponent<HilarioScript>();
+         HilarioScript hilarioScript = other.gameObject.GetComponent<HilarioScript>();
 
          if (hilarioScript != null)
          {
-            hilarioScript.TakeDamage(damage);
+            hilarioScript.Die();
          }
         }
       }
 
+
+     private void ActualizarAnimaciones()
+     {
+      animator.SetBool("Caminando", true);
+     } 
 }

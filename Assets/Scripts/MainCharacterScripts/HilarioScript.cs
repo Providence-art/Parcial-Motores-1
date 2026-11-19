@@ -70,7 +70,7 @@ public class HilarioScript : MonoBehaviour
         
     }
 
-    private void Die()
+    public void Die()
     {
         if (sfxMuerte != null)
         {
