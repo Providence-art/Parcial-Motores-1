@@ -7,6 +7,8 @@ public class HilarioScript : MonoBehaviour
     [SerializeField] private int maxHealth = 3;
     [SerializeField] private SfxVariado sfxDaño;
     [SerializeField] private SfxVariado sfxMuerte;
+    public int Health => health;
+    public int MaxHealth => maxHealth;
     private CharacterMovement movement;
 
 
